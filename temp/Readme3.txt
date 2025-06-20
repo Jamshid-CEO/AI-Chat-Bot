@@ -1,0 +1,15 @@
+Stajirovkadan otib kelganlar haqida malumotlar sanalari bilan 
+6-fevral , 2025
+123
+Erkin Farmanov
+<p>Buxoro shahri jamoat transport xaritasi, “UzTmyBus” hamda “Uztrans” mobil ilovalari Slovakiya Respublikasi tajribasi asosida takomillashtiriladi</p><p><br></p><p>Ayni vaqtda Bratislava Komenius universitetida qisqa muddatli ilmiy stajirovka o‘tayotgan, Buxoro davlat universitetining “Turizm va mehmonxona xo‘jaligi” kafedrasi o‘qituvchisi Erkin Farmanov transport xizmatlari sifatini raqamlashtirish orqali oshirish yuzasidan ilmiy-amaliy o‘rganishlar olib boryapti.&nbsp;</p><p><br></p><p>Ilmiy ishim orqali O‘zbekistonda transport xizmatlari sifatini yanada oshirish va Buxoro shahri jamoat transportining raqamli modelini xorij tajribasi asosida ishlab chiqishni maqsad qilganman,-deydi Erkin Farmonov.&nbsp;</p><p><br></p><p>Ma’lumot o‘rnida mazkur ilmiy stajirovka Ilm-fanni moliyalashtirish va innovatsiyalarni qo‘llab-quvvatlash jamg‘armasi tomonidan moliyalashtirilgan.</p>
+
+6-fevral , 2025
+123
+Abbos Shodiyev
+<p>Qarshi muhandislik-iqtisodiyot instituti professor-o‘qituvchilari Abbos Shodiyev, Shahboz Turdiyev, Zuhriddin Latipov hamda Navoiy davlat konchilik va texnologiyalar universiteti o‘qituvchisi G‘ayratillo Ziyodulloyevlar Vengriya davlatining nufuzli oliy taʼlim muassasalaridan biri Mishkols universitetida ilmiy stajirovka o‘tamoqdalar.</p><p>&nbsp;</p><p>Professor-o‘qituvchilar stajirovka davomida tog‘-kon va geologiya sohasida ishlab chiqarish jarayonlarini avtomatlashtirish, ilg‘or texnologiyalarni qo‘llash va ishlab chiqarish samaradorligini oshirish borasida tajriba almashmoqda.&nbsp;</p><p><br></p><p>Shuningdek, ilmiy-texnologik loyihalarni boshqarish, tadqiqot natijalarini tijoratlashtirish hamda raqamli texnologiyalarni ta’lim jarayoniga tatbiq qilish kabi sohalarda yangi&nbsp;bilimlarni o‘zlashtirish maqsad qilingan.&nbsp;</p><p><br></p><p>Maʼlumot uchun, ushbu ilmiy stajirovka Ilm-fanni moliyalashtirish va innovatsiyalarni qo‘llab-quvvatlash jamg‘armasi tomonidan moliyalashtirilgan.</p>
+
+6-fevral , 2025
+123
+Ruslan Valiyev
+<p>O‘zbekiston milliy metrologiya instituti ilmiy-innovatsion rivojlantirish va xalqaro aloqalar bo‘limi boshlig‘i v.b. Ruslan Valiyev hamda kalibrlash markazining yetakchi mutaxassisi Natalya Farxodova D.I.Mendeleyev nomidagi Butunrossiya Metrologiya ilmiy-tadqiqot institutida qisqa muddatli ilmiy stajirovka o‘tab qaytdilar.&nbsp;</p><p>Yosh olimlar Issiqlik o‘tkazuvchanligini o‘lchash vositalarining metrologik xizmatlarini kengaytirish va issiqlik o‘tkazuvchanligini o‘lchash vositalarini tekshirish metodologiyasi hamda gaz oqimini o‘lchash sohasidagi ko‘nikmalarini oshirish, shuningdek, elektroaspiratorlar va rotametrlarni kalibrlashni joriy etish bo‘yicha malaka oshirdilar.</p><p>Ma’lumot o‘rnida mazkur ilmiy stajirovka Ilm-fanni moliyalashtirish va innovatsiyalarni qo‘llab-quvvatlash jamg‘armasi tomonidan moliyalashtirilgan.</p>
