@@ -15,5 +15,7 @@ def speech_to_text(audio_bytes: bytes) -> str:
     }
 
     response = requests.post(url, headers=headers, files=files)
-    response.raise_for_status()
-    return response.json()['text']
+    response.raise_for_status()  # agar 500 yoki 400 chiqsa xato ko‘rsatadi
+
+    # JSON emas, oddiy matn
+    return response.text.strip()

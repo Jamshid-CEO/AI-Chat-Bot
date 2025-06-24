@@ -1,6 +1,7 @@
 from fastapi import FastAPI, UploadFile, Form
 from fastapi.responses import StreamingResponse
 import io
+import base64
 import stt
 import tts
 import gpt
@@ -8,24 +9,11 @@ import gpt
 app = FastAPI(title="Full Voice Chat Bot")
 
 @app.post("/chat/audio")
-async def full_voice_chat(audio: UploadFile):
+async def speech_to_text_endpoint(audio: UploadFile):
     try:
-        # 1. STT: Ovozdan text olish
         audio_bytes = await audio.read()
-        user_text = stt.speech_to_text(audio_bytes)
-
-        # 2. AI modelga yuborish
-        reply_text = gpt.ask_gpt(user_text)
-
-        # 3. TTS: Javobni ovozga aylantirish
-        audio_reply = tts.text_to_speech(reply_text)
-
-        # 4. Ovozli va text javoblarni qaytarish
-        return {
-            "user_text": user_text,
-            "reply_text": reply_text,
-            "audio_base64": io.BytesIO(audio_reply).getvalue().hex()  # yoki base64 encode qilsa ham bo‘ladi
-        }
+        text = stt.speech_to_text(audio_bytes)
+        return {"text": text}
     except Exception as e:
         return {"error": str(e)}
 
