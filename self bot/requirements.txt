@@ -15,3 +15,12 @@ python-docx
 python-dotenv
 tiktoken
 chromadb
+fastapi
+uvicorn
+python-dotenv
+requests
+pypdf
+docx
+openai
+faiss-cpu
+tiktoken
