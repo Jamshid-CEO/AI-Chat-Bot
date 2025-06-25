@@ -9,6 +9,8 @@ app = FastAPI(title="Full Voice Chat Bot with RAG")
 UPLOAD_FOLDER = "knowledge_base"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
+rag=RAGEngine()
+
 # ✅ 1. FAYL YUKLASH
 @app.post("/upload")
 async def file_upload(file: UploadFile = File(...)):
