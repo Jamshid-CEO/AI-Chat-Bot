@@ -1,13 +1,29 @@
 import openai
+import os
+from dotenv import load_dotenv
+from rag_engine import RAGEngine
 
-openai.api_key = "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"
+load_dotenv()
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
-def ask_gpt(user_text: str) -> str:
+rag = RAGEngine()
+
+def ask_gpt(user_input: str) -> str:
+    context = "\n".join(rag.retrieve(user_input, top_k=3))
+
+    system_prompt = (
+        f"Faqat quyidagi bilim asosida javob bering:\n{context}\n\n"
+        f"Agar javob topilmasa, 'Kechirasiz, bu mavzu bo‘yicha ma'lumot yo‘q.' deb yozing."
+    )
+
+    messages = [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": user_input},
+    ]
+
     response = openai.ChatCompletion.create(
         model="gpt-4o",
-        messages=[
-            {"role": "system", "content": "You are a helpful assistant."},
-            {"role": "user", "content": user_text}
-        ]
+        messages=messages,
+        temperature=0.3
     )
     return response['choices'][0]['message']['content']

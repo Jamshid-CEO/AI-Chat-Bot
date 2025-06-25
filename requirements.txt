@@ -6,3 +6,12 @@ sentence-transformers
 faiss-cpu
 python-multipart
 openai
+fastapi
+uvicorn
+openai
+faiss-cpu
+pypdf
+python-docx
+python-dotenv
+tiktoken
+chromadb
