@@ -9,11 +9,12 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 rag = RAGEngine()
 
 def ask_gpt(user_input: str) -> str:
-    context = "\n".join(rag.retrieve(user_input, top_k=3))
+    chunks = rag.retrieve(user_input)
+    context = "\n---\n".join(chunks)
 
     system_prompt = (
         f"Faqat quyidagi bilim asosida javob bering:\n{context}\n\n"
-        f"Agar javob topilmasa, 'Kechirasiz, bu mavzu bo‘yicha ma'lumot yo‘q.' deb yozing."
+        f"Agar javob  topishda qiynalsangiz yoki topa olmasangiz  yuklangan malumotlar embedding ga mos ravishda toliq va aniq javob bering userni toliq va aniq contextli javoblaringiz orqali qoniqtiring "
     )
 
     messages = [

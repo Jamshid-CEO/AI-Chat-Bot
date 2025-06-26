@@ -21,3 +21,14 @@ rad.json
 #Test results file
 TestResults.xml
 venv
+.idea
+
+
+.self_bot/knowladge_base
+.self_bot/knowladge_embedding
+.self_bot/__pycache__
+knowladge_base
+.env
+self_bot/knowladge_base
+
+
