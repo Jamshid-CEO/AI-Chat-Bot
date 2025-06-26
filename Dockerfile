@@ -1,20 +1,22 @@
-# Bazaviy Python image
-FROM python:3.12
+FROM python:3.10-slim
 
-# Ishchi katalog
+# ishchi papka
 WORKDIR /app
 
-# Requirements
-COPY requirements.txt .
+# tizim kutubxonalarini o‘rnatish (PDF va docx uchun zarur)
+RUN apt-get update && apt-get install -y \
+    libmagic-dev \
+    poppler-utils \
+    && rm -rf /var/lib/apt/lists/*
 
-# Paketlarni o'rnatish
+# python kutubxonalar
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Appni ko‘chirish
+# loyihani nusxalash
 COPY . .
 
-# Port ochish
-EXPOSE 8000
+# .env o‘qilishi uchun
+ENV PYTHONUNBUFFERED=1
 
-# FastAPI serverni ishga tushurish
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]

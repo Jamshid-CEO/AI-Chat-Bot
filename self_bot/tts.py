@@ -1,5 +1,5 @@
 import requests
-from auth_token import token_manager
+from self_bot.auth_tokens import token_manager
 
 def text_to_speech(text: str) -> bytes:
     token = token_manager.get_token()

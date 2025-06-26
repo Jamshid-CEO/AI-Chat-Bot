@@ -30,5 +30,5 @@ venv
 knowladge_base
 .env
 self_bot/knowladge_base
-
+knowladge_embedding
 

@@ -2,16 +2,22 @@ import faiss
 import numpy as np
 import os
 import tiktoken
-from loader import load_knowledge_base
-from embed import get_embedding
+from dotenv import load_dotenv
+from self_bot.loader import load_knowledge_base
+from self_bot.embed import get_embedding
 
 class RAGEngine:
-    def __init__(self, knowledge_folder="knowledge_base", embedding_folder="knowledge_embedding"):
+    def __init__(self):
+        load_dotenv()
+
+        self.knowledge_folder = os.getenv("KNOWLEDGE_BASE_DIR", "knowledge_base")
+        self.embedding_folder = os.getenv("KNOWLEDGE_EMBEDDING_DIR", "knowledge_embedding")
+
+        os.makedirs(self.knowledge_folder, exist_ok=True)
+        os.makedirs(self.embedding_folder, exist_ok=True)
+
         self.docs = []
         self.index = None
-        self.knowledge_folder = knowledge_folder
-        self.embedding_folder = embedding_folder
-        os.makedirs(self.embedding_folder, exist_ok=True)
         self.tokenizer = tiktoken.encoding_for_model("text-embedding-ada-002")
         self._load_all_documents()
 
@@ -73,6 +79,9 @@ class RAGEngine:
                 print(f"⚠️ Embedding xatolik: {file_id} - {e}")
 
     def _load_all_documents(self):
+        if not os.path.exists(self.knowledge_folder):
+            print(f"⚠️ Folder mavjud emas: {self.knowledge_folder}")
+            return
         for filename in os.listdir(self.knowledge_folder):
             file_path = os.path.join(self.knowledge_folder, filename)
             if os.path.isfile(file_path):

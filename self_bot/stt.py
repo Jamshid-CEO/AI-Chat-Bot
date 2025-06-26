@@ -1,6 +1,7 @@
 import requests
 from io import BytesIO
-from auth_token import token_manager
+
+from self_bot.auth_tokens import token_manager
 
 def speech_to_text(audio_bytes: bytes) -> str:
     token = token_manager.get_token()

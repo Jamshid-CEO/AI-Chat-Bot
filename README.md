@@ -20,4 +20,5 @@ docker start
   sudo docker start voicebot
 
   
+docker compose up --build
 

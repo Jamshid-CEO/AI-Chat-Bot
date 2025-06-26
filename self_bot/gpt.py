@@ -1,7 +1,7 @@
 import openai
 import os
 from dotenv import load_dotenv
-from rag_engine import RAGEngine
+from self_bot.rag_engine import RAGEngine
 
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
