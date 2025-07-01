@@ -5,7 +5,7 @@ psycopg2-binary
 python-dotenv
 gtts
 tiktoken
-openai
+openai==0.28
 faiss-cpu
 python-docx
 pypdf
